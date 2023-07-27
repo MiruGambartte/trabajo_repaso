@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problema 8</title>
+</head>
+<body>
+   <script>
+     let numero;
+    numero = prompt('ingrese un numero: ') ;
+    numero = parseInt(numero);
+    if (numero>= 1){
+       document.write('el valor es positivo');
+    }else{
+       if (numero < 0){
+           document.write('el numero es negativo');
+       } 
+           else{
+           document.write('el numero es cero');
+       }
+   }
+   document.write('<br>');
+
+   let numero1;
+    numero1 = prompt('ingrese un numero de hasta 3 cifras: ') ;
+    numero1 = parseInt(numero1);
+    if (numero1>= 1, numero1<= 9) {
+      document.write('El numero tiene una cifra');
+    }else{
+      if (numero1 >=10, numero1<=99){
+          document.write('el numero tiene dos cifras');
+      } 
+          else{
+             if (numero1 >=100, numero1<=999){
+                 document.write('el numero tiene tres cifras');
+             }else{
+                 document.write('el numero no es valido');
+             }
+      }
+  }
+  document.write('<br/>');
+
+  let nombre, total_pregunta,cantidad_correctas ;
+  nombre = prompt('ingrese su nombre: ') ;
+  total_pregunta = parseInt(prompt('cuantas preguntas se le hicieron: ')) ;
+  cantidad_correctas = parseInt(prompt('Cuantas respondio correctamente: '));
+  let porcentaje;
+  porcentaje = cantidad_correctas/total_pregunta * 100;
+  if (cantidad_correctas>= 9, cantidad_correctas<= 10) {
+      document.write('Tiene nivel superior');
+     }else{
+          if (cantidad_correctas >=7, cantidad_correctas<=8){
+             document.write('Tiene nivel medio');
+          } 
+         else{
+             if (cantidad_correctas >=6, cantidad_correctas<=5){
+                 document.write('Tiene nivel regular');
+              }else{
+                     if (cantidad_correctas <5){
+                         document.write('Fuera de nivel'); 
+                     }else{
+                         document.write('La cantidad no es valido'); 
+                     }
+              }
+}
+ }
+   </script> 
+</body>
+</html>

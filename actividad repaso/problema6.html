@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 7</title>
+</head>
+<body>
+   <script>
+    let numero1, numero2;
+    numero1 = parseInt(prompt('ingrese un primer numero: '));
+    numero2 = parseInt(prompt('ingrese un segundo numero: '));
+    if (numero1 > numero2){
+        let suma = numero1 + numero2;
+        let diferencia = numero1 - numero2;
+        document.write('la suma es de ' + suma);
+        document.write('<br>');
+        document.write('la diferencia es de ' + diferencia);
+        document.write('<br>');
+    }else{
+        let producto, division;
+        producto = numero1 * numero2;
+        division = numero1 / numero2;
+        document.write('el resultado del producto es de ' + producto);
+        document.write('<br>');
+        document.write('la division es de ' + division);
+        document.write('<br>');
+    
+    }
+
+    let nota1, nota2, nota3;
+    nota1= parseInt(prompt('ingrese la primera nota: '));
+    nota2= parseInt(prompt('ingrese la segunda nota: '));
+    nota3= parseInt(prompt('ingrese la tercera nota: '));
+    let suma = parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
+    let promedio = suma/3;
+    if (promedio >= 4){
+        document.write('regular');
+    }else{
+        document.write('desaprobado');
+    }
+    document.write('<br>');
+
+
+    let digito;
+   digito = parseInt(prompt('ingrese un numero entre 0 a 99: '));
+   if (digito < 10){
+      document.write('el numero es de un digito');
+   }else{
+      document.write('el numero es de dos digito');
+   }
+   </script> 
+</body>
+</html>
