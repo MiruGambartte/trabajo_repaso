@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problema 9</title>
+</head>
+<body>
+    <script>
+        let dia, mes, año;
+        dia = prompt('ingrese el dia: ') ;
+        mes = prompt('ingrese el mes: ') ;
+        año = prompt('ingrese el año: ') ;
+        dia = parseInt(dia);
+        mes = parseInt(mes);
+        año = parseInt(año);
+        if (dia == 25 && mes ==12) {
+            document.write('Es navidad');
+         }else{
+             document.write('No es navidad');
+            }
+        document.write('<br>');
+
+
+
+
+        let numero1, numero2, numero3;
+        numero1 = parseInt(prompt('ingrese el primer numero'));
+        numero2 = parseInt(prompt('ingrese el segundo numero'));
+        numero3 = parseInt(prompt('ingrese el tercer numero'));
+        if(numero1 == numero2 && numero1 == numero3){
+            let numero=(numero1 + numero2) * numero3;
+            document.write('el resultado de la suma de los dos primeros numeros multiplicado por el tercer numero es: ' + numero);
+        }else{
+            document.write('los numeros son distintos')
+        }
+        document.write('<br>');
+
+        let num1, num2, num3;
+        num1 = parseInt(prompt('ingrese el primer numero:'));
+        num2 = parseInt(prompt('ingrese el segundo numero:'));
+        num3 = parseInt(prompt('ingrese el tercer numero:'));
+        if (num1<10 && num2<10 && num3<10){
+            document.write('todos los numeros son menores a 10');
+        }else{
+            document.write('hay numeros mayores a 10');
+        }
+        document.write('<br>');
+
+        let x, y;
+        x = parseInt(prompt('Ingrese coordenada x'));
+        y = parseInt(prompt('Ingrese coordenada y'));
+        if (x > 0 && y > 0) {
+            document.write('Se encuentra en el primer cuadrante');
+        } else {
+            if (x < 0 && y > 0) {
+                document.write('Se encuentra en el segundo cuadrante');
+            } else {
+                if (x < 0 && y < 0) {
+                    document.write('Se encuentra en el tercer cuadrante');
+                } else {
+                    if (x > 0 && y < 0) {
+                        document.write('Se encuentra en el cuarto cuadrante');
+                    } else {
+                        document.write('Se encuentra sobre un eje');
+                    }
+                }
+            }
+        }
+        document.write('<br>');
+
+
+        let nombre, sueldo, antiguedad, sueldo_final;
+        nombre = prompt('ingrese el nombre del operador');
+        sueldo = parseInt(prompt('ingrese el sueldo del operador'));
+        antiguedad = parseInt(prompt('ingrese la antiguedad del operador'));
+        if(sueldo < 500 && antiguedad >= 10){
+            document.write('se le otorga un aumento del 20%');
+            document.write('<br>');
+            sueldo_final = sueldo + sueldo * 0.2;
+            document.write('el sueldo final seria de' + sueldo_final);
+        }else{
+            if(sueldo< 500 && antiguedad <=10){
+                document.write('se le otorga un aumento del 5%');
+                document.write('<br>');
+                sueldo_final = sueldo + sueldo * 0.05;
+                document.write('el sueldo final seria de ' + sueldo_final);
+            }else{
+                document.write('el sueldo no tiene cambio' + sueldo);
+            }
+        }
+            
+
+
+    </script>
+</body>
+</html>
